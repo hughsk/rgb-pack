@@ -1,0 +1,31 @@
+{
+  "name": "rgb-pack",
+  "description": "Packs integer values from a 2D ndarray into an RGB one for storing as compressed images",
+  "version": "0.0.0",
+  "main": "index.js",
+  "browser": "index.js",
+  "scripts": {
+    "test": "npm run prepublish && node test",
+    "prepublish": "constantify src.js > index.js"
+  },
+  "dependencies": {
+    "cwise": "~0.4.0",
+    "ndarray": "~1.0.8"
+  },
+  "devDependencies": {
+    "perlin": "~1.0.0",
+    "tape": "~1.1.1",
+    "ndarray-ops": "~1.1.1",
+    "zeros": "0.0.0",
+    "ndarray-fill": "~0.1.0"
+  },
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://github.com/hughsk)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/rgb-pack"
+  },
+  "bugs": {
+    "url": "https://github.com/hughsk/rgb-pack/issues"
+  }
+}
